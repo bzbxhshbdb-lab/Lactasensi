@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
 <header>
   <button id="menuBtn">☰</button>
   <h1>LactaSensi</h1>
@@ -22,12 +23,14 @@
   <button onclick="mostrar('famosos')">Famosos</button>
   <button onclick="mostrar('dpi')">DPI</button>
   <button onclick="mostrar('mira')">Mira</button>
-  <button onclick="logout()">Suporte</button>
+  <button onclick="suporte()">Suporte</button>
 </nav>
 
-<main id="conteudo"></main>
+<main id="conteudo">
+  <p>Escolha uma aba para começar.</p>
+</main>
 
-<script type="module" src="index-firebase.js"></script>
+<script type="module" src="login.js"></script>
 <script src="app.js"></script>
 <script>
 if("serviceWorker" in navigator){
