@@ -1,0 +1,8 @@
+body{margin:0;background:#000;color:#fff;font-family:Arial}
+header{display:flex;background:#8b0000;padding:10px}
+#menuBtn{background:none;border:none;color:#fff;font-size:22px}
+nav{display:none;flex-direction:column;background:#111}
+nav button{padding:15px;background:none;border:none;color:#fff}
+main{padding:20px}
+select,button{width:100%;padding:12px;margin-top:10px}
+.fire{background:red;font-size:20px}
