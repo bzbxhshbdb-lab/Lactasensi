@@ -3,8 +3,8 @@
   "short_name": "LactaSensi",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#000",
+  "theme_color": "#8b0000",
   "icons": [
     {
       "src": "icon-512.png",
