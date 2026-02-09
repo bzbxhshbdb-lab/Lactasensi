@@ -5,11 +5,14 @@
 <title>LactaSensi</title>
 <meta name="viewport" content="width=device-width">
 
+<!-- PWA -->
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
 
+<!-- iOS PWA -->
 <link rel="apple-touch-icon" href="apple-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="LactaSensi">
 </head>
 
@@ -27,18 +30,36 @@ if(localStorage.getItem("vip")!=="true"){
 </header>
 
 <nav id="menu">
-  <button onclick="mostrar('ia')">IA</button>
-  <button onclick="mostrar('famosos')">Famosos</button>
-  <button onclick="mostrar('dpi')">DPI</button>
-  <button onclick="mostrar('mira')">Mira</button>
+  <button onclick="tab='ia'">IA</button>
+  <button onclick="tab='famosos'">Famosos</button>
+  <button onclick="tab='dpi'">DPI</button>
   <button onclick="suporte()">Suporte</button>
 </nav>
 
-<main id="conteudo"></main>
+<main>
+  <select id="prioridade">
+    <option>Head</option>
+    <option>Neck</option>
+    <option>Chest</option>
+    <option>Body</option>
+  </select>
+
+  <select>
+    <option>Free Fire</option>
+    <option>Free Fire Max</option>
+    <option>Free Fire Amazon</option>
+  </select>
+
+  <button onclick="gerar()">Gerar Sensibilidade</button>
+
+  <div id="resultado"></div>
+
+  <button class="fire">ATIRAR</button>
+</main>
 
 <script src="app.js"></script>
 <script>
-if("serviceWorker"in navigator){
+if("serviceWorker" in navigator){
   navigator.serviceWorker.register("sw.js");
 }
 </script>
