@@ -3,14 +3,15 @@ body{background:#000}
 header{display:flex;align-items:center;padding:10px;background:#8b0000}
 header h1{flex:1;text-align:center}
 #menuBtn{background:none;border:none;font-size:24px;color:#fff}
-
 nav{display:none;flex-direction:column;background:#111}
 nav button{padding:12px;border:none;background:#111;border-bottom:1px solid #222}
-
 main{padding:15px}
 select,input,button{width:100%;padding:10px;margin-bottom:10px;background:#111;border:1px solid #333}
 button{background:#8b0000;border:none;font-weight:bold}
 .fire{background:#ff0000}
 
+/* LOGIN MODERNO */
 .login-body{display:flex;justify-content:center;align-items:center;height:100vh}
 .login-box{width:90%;max-width:320px;background:#0e0e0e;padding:25px;border-left:4px solid #8b0000;border-radius:8px;text-align:center}
+.login-box input{display:block;margin:10px auto;width:80%;padding:10px;border-left:4px solid #8b0000;background:#111;color:#fff}
+.login-box button{display:block;margin:10px auto;width:50%;padding:10px}
